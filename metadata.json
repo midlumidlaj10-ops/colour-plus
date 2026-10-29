@@ -1,0 +1,7 @@
+{
+  "name": "Colour Plus - The Ocean of Garments",
+  "description": "Trusted clothing shop in S.M. Street (Mittai Theruvu) Kozhikode serving stylish kids and women garments since 1998.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

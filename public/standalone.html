@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- =================================================================
+       SEO & SOCIAL SHARE TAGS (Easily edit title, description & keywords)
+       ================================================================= -->
+  <title>Colour Plus - The Ocean of Garments | Clothing Shop in S.M. Street Kozhikode</title>
+  <meta name="description" content="Colour Plus is a trusted clothing shop in S.M. Street (Mittai Theruvu) Kozhikode since 1998. Explore our wide collection of boys', girls' and ladies' wear. The Ocean of Garments.">
+  <meta name="keywords" content="clothing shop in S.M. Street Kozhikode, Colour Plus Kozhikode, Mittai Theruvu dress shop, kids clothing Calicut, ladies wear Calicut, kurtis S.M. Street, boys clothes Kozhikode">
+  <meta name="theme-color" content="#E8268F">
+
+  <!-- Open Graph for WhatsApp, Facebook, Instagram sharing -->
+  <meta property="og:title" content="Colour Plus - The Ocean of Garments | Kozhikode">
+  <meta property="og:description" content="Serving Kozhikode since 1998 with stylish garments for kids and women on historic S.M. Street.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Pacifico & Dancing Script (headings) + Poppins (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN for instant single-file plug-and-play -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              pink: '#E8268F',        /* YOUR LOGO HOT PINK COLOR */
+              darkpink: '#D0177D',
+              lightpink: '#FFF0F7',
+              softpink: '#FDF2F8',
+              gold: '#D4AF37'
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            script: ['Dancing Script', 'cursive'],
+            display: ['Pacifico', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Client-grade CSS animations and ornamental styling -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .font-script {
+      font-family: 'Dancing Script', cursive;
+    }
+    .font-display {
+      font-family: 'Pacifico', cursive;
+    }
+    .ornamental-divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .ornamental-divider::before,
+    .ornamental-divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1.5px solid #FBCFE8;
+    }
+    .ornamental-divider:not(:empty)::before {
+      margin-right: 1.25rem;
+    }
+    .ornamental-divider:not(:empty)::after {
+      margin-left: 1.25rem;
+    }
+    /* Smooth floating animation for key trust badges */
+    @keyframes floatSoft {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-float {
+      animation: floatSoft 4s ease-in-out infinite;
+    }
+    /* Shimmer effect for promotional highlights */
+    @keyframes shimmerGlow {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+    .animate-shimmer {
+      animation: shimmerGlow 2.5s infinite ease-in-out;
+    }
+    /* Kerala Kasavu gold ribbon */
+    @keyframes kasavuGlow {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    .kasavu-gold-ribbon {
+      background: linear-gradient(90deg, #D4AF37, #FDE047, #E8268F, #FDE047, #D4AF37);
+      background-size: 300% 300%;
+      animation: kasavuGlow 6s ease infinite;
+    }
+    /* Silk wave motion */
+    @keyframes silkWave {
+      0% { transform: translateX(0) scaleY(1); }
+      50% { transform: translateX(-25%) scaleY(1.08); }
+      100% { transform: translateX(-50%) scaleY(1); }
+    }
+    .animate-silk-wave {
+      animation: silkWave 14s ease-in-out infinite alternate;
+    }
+  </style>
+
+  <!-- Schema.org LocalBusiness Structured Data for Google Maps & Local Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Colour Plus",
+    "alternateName": "The Ocean of Garments",
+    "description": "Trusted family clothing store on famous S.M. Street Kozhikode serving customers since 1998 with stylish garments for kids and women.",
+    "foundingDate": "1998",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "S.M. Street (Mittai Theruvu)",
+      "addressLocality": "Kozhikode",
+      "addressRegion": "Kerala",
+      "postalCode": "673001",
+      "addressCountry": "IN"
+    },
+    "telephone": ["+917907141419", "+919895338544", "+919961421201"],
+    "openingHours": "Mo-Su 10:00-21:00",
+    "priceRange": "₹₹"
+  }
+  </script>
+</head>
+<body class="bg-[#FCFCFD] text-slate-800 antialiased selection:bg-pink-100 selection:text-brand-pink">
+
+  <!-- =================================================================
+       TOP ANNOUNCEMENT BAR: STORE HOURS, LIVE STATUS & NRI VIDEO TOUR
+       ================================================================= -->
+  <div class="bg-gradient-to-r from-pink-950 via-brand-pink to-pink-950 text-white text-xs py-2 px-4 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <!-- Live Open / Closed indicator -->
+        <span id="top-open-indicator" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/20 text-white backdrop-blur-sm">
+          <span id="status-dot" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span id="status-text">Checking hours...</span>
+        </span>
+        <span class="hidden sm:inline text-pink-100">Daily 10:00 AM – 9:00 PM</span>
+        <span class="hidden md:inline text-pink-200">·</span>
+        <span class="hidden md:inline text-pink-100">2 Stores: S.M. Street & Pantheeramkavu, Calicut</span>
+      </div>
+
+      <div class="flex items-center gap-3 sm:gap-4 text-xs font-medium">
+        <button onclick="openModal('video-modal')" class="text-emerald-200 hover:text-white flex items-center gap-1 bg-white/10 hover:bg-white/20 px-2.5 py-0.5 rounded-full transition-colors">
+          <span>📹 Video Shopping (NRI/Home)</span>
+        </button>
+        <span class="text-pink-300">|</span>
+        <a href="tel:+917907141419" class="hover:underline flex items-center gap-1">📞 79071 41419</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       SECTION 1: STICKY NAVIGATION BAR
+       ================================================================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-pink-100 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- LOGO AREA: Replace C+ with your image tag once uploaded:
+           <img src="your-logo.png" alt="Colour Plus" class="h-12 w-auto object-contain">
+      -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div id="nav-logo-box" class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-pink to-pink-500 text-white font-bold text-xl flex items-center justify-center shadow-md shadow-pink-500/20 ring-2 ring-pink-100 transition-transform group-hover:scale-105">
+          <span class="font-display tracking-wide">C+</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display text-2xl text-brand-pink tracking-tight leading-none group-hover:text-brand-darkpink transition-colors">
+            Colour Plus
+          </span>
+          <span class="text-[11px] font-medium text-slate-500 tracking-wider uppercase mt-1">
+            The Ocean of Garments
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
+        <a href="#home" class="hover:text-brand-pink transition-colors py-1">Home</a>
+        <a href="#collections" class="hover:text-brand-pink transition-colors py-1">Collections</a>
+        <a href="#finder" class="hover:text-brand-pink transition-colors py-1">Outfit Finder</a>
+        <a href="#wholesale" class="hover:text-brand-pink transition-colors py-1">Wholesale & B2B</a>
+        <a href="#about" class="hover:text-brand-pink transition-colors py-1">Our Heritage</a>
+        <a href="#reviews" class="hover:text-brand-pink transition-colors py-1">Reviews</a>
+        <a href="#contact" class="hover:text-brand-pink transition-colors py-1">Visit Store</a>
+      </nav>
+
+      <!-- Desktop Action CTAs -->
+      <div class="hidden sm:flex items-center gap-2.5">
+        <button onclick="openModal('size-modal')" class="px-3 py-2 text-xs font-semibold text-slate-700 hover:text-brand-pink bg-slate-100 hover:bg-pink-50 rounded-lg transition-colors border border-slate-200">
+          Size Guide
+        </button>
+        <a href="tel:+917907141419" class="px-4 py-2 text-xs font-semibold text-brand-pink bg-pink-50 hover:bg-pink-100 rounded-lg transition-colors border border-pink-200 flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Call Now
+        </a>
+        <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus,%20I%20would%20like%20to%20know%20more%20about%20your%20clothing%20collections." target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-xs font-semibold text-white bg-brand-pink hover:bg-brand-darkpink rounded-lg transition-all shadow-sm shadow-pink-500/30 flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 text-slate-600 hover:text-brand-pink focus:outline-none">
+        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-pink-100 px-5 pt-3 pb-6 shadow-xl transition-all">
+      <div class="flex flex-col space-y-3 text-base font-medium text-slate-800">
+        <a href="#home" class="mobile-nav-link hover:text-brand-pink py-2 border-b border-slate-100">Home</a>
+        <a href="#collections" class="mobile-nav-link hover:text-brand-pink py-2 border-b border-slate-100">Collections (Boys, Girls, Ladies)</a>
+        <a href="#finder" class="mobile-nav-link hover:text-brand-pink py-2 border-b border-slate-100">Smart Outfit Finder</a>
+        <a href="#wholesale" class="mobile-nav-link hover:text-brand-pink py-2 border-b border-slate-100">Wholesale & B2B Supply</a>
+        <a href="#about" class="mobile-nav-link hover:text-brand-pink py-2 border-b border-slate-100">About Us (Since 1998)</a>
+        <a href="#reviews" class="mobile-nav-link hover:text-brand-pink py-2 border-b border-slate-100">Customer Reviews</a>
+        <a href="#contact" class="mobile-nav-link hover:text-brand-pink py-2">Contact & Location</a>
+      </div>
+
+      <div class="mt-4 pt-4 border-t border-pink-100 grid grid-cols-2 gap-2">
+        <button onclick="openModal('video-modal')" class="w-full text-center py-2.5 px-3 bg-emerald-50 text-emerald-800 font-semibold rounded-lg text-xs border border-emerald-200">
+          📹 Video Tour
+        </button>
+        <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus!" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2.5 px-3 bg-brand-pink text-white font-semibold rounded-lg text-xs shadow-sm">
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================
+       KASAVU GOLD SHIMMER & CELEBRATION MODE BAR
+       ================================================================= -->
+  <div class="h-1 kasavu-gold-ribbon w-full"></div>
+  <div class="bg-gradient-to-r from-pink-50/90 via-white to-pink-50/90 border-b border-pink-100 py-2.5 px-4 shadow-sm relative z-20">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2 text-xs font-semibold text-slate-800">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-pink"></span>
+        </span>
+        <span class="text-brand-pink font-bold uppercase tracking-wider text-[11px]">Celebration Mode:</span>
+        <span class="hidden md:inline text-slate-500 font-normal">Choose your shopping theme for live styling & music</span>
+      </div>
+
+      <div class="flex items-center gap-1.5 flex-wrap">
+        <button onclick="setCelebrationMode('all')" id="btn-mode-all" class="mode-btn px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all bg-brand-pink text-white shadow-sm ring-2 ring-pink-200">
+          <span>✨</span> All Season
+        </button>
+        <button onclick="setCelebrationMode('onam')" id="btn-mode-onam" class="mode-btn px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all bg-white hover:bg-pink-50 text-slate-700 border border-pink-200">
+          <span>🌼</span> Onam & Vishu
+        </button>
+        <button onclick="setCelebrationMode('eid')" id="btn-mode-eid" class="mode-btn px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all bg-white hover:bg-pink-50 text-slate-700 border border-pink-200">
+          <span>🌙</span> Eid Mubarak
+        </button>
+        <button onclick="setCelebrationMode('wedding')" id="btn-mode-wedding" class="mode-btn px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all bg-white hover:bg-pink-50 text-slate-700 border border-pink-200">
+          <span>💍</span> Wedding Specials
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Floating Live Social Proof Activity Toast -->
+  <div id="live-activity-toast" class="fixed bottom-6 left-6 z-40 max-w-xs sm:max-w-sm bg-white/95 backdrop-blur-md border border-pink-200 p-3 rounded-2xl shadow-xl flex items-center gap-3 text-xs text-slate-700 transition-all duration-300">
+    <div id="toast-icon" class="w-8 h-8 rounded-full bg-pink-100 text-brand-pink flex items-center justify-center shrink-0 text-base shadow-xs">
+      🌸
+    </div>
+    <div class="flex-1 min-w-0 pr-1">
+      <p id="toast-text" class="font-semibold text-slate-900 leading-tight truncate">
+        Just now: Customer from Nadakkavu reserved Girls' Kasavu Frock on WhatsApp
+      </p>
+      <p class="text-[10px] text-brand-pink font-medium mt-0.5">S.M. Street Store · Verified Activity</p>
+    </div>
+    <button onclick="document.getElementById('live-activity-toast').style.display='none'" class="text-slate-400 hover:text-slate-600 p-1 shrink-0 cursor-pointer">
+      ✕
+    </button>
+  </div>
+
+  <!-- =================================================================
+       SECTION 2: HERO SECTION
+       ================================================================= -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-b from-pink-50/60 via-white to-pink-50/40 pt-10 pb-20 lg:pt-16 lg:pb-28 border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-pink-200 shadow-sm text-xs text-brand-pink font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-brand-pink"></span>
+            Serving Kozhikode Since 1998 · Over 25+ Years of Trust
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.15]">
+            <span class="block font-display text-brand-pink text-5xl sm:text-6xl lg:text-7xl mb-2">Colour Plus</span>
+            <span class="text-slate-800">The Ocean of Garments</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Your beloved family garments destination located at the historic heart of <strong class="text-slate-900 font-semibold">S.M. Street (Mittai Theruvu), Kozhikode</strong>. Discover the finest collection of comfortable everyday wear and stunning festive outfits for boys, girls, and women.
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
+            <a href="tel:+917907141419" class="px-6 py-3.5 text-sm sm:text-base font-semibold text-white bg-brand-pink hover:bg-brand-darkpink rounded-xl shadow-lg shadow-pink-500/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              Call Now
+            </a>
+
+            <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus!%20I%20am%20visiting%20your%20shop%20at%20S.M.%20Street%20and%20want%20to%20know%20about%20your%20latest%20arrivals." target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 text-sm sm:text-base font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-200 rounded-xl shadow-sm transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+              <span class="text-emerald-500 font-bold text-lg">💬</span>
+              WhatsApp Us
+            </a>
+
+            <button onclick="openModal('video-modal')" class="px-5 py-3.5 text-sm font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-xl transition-colors">
+              📹 Video Shopping (NRI)
+            </button>
+          </div>
+
+          <!-- Quick click-to-call phone pill bar for all 3 numbers -->
+          <div class="pt-3 border-t border-pink-100/80">
+            <p class="text-xs text-slate-500 mb-2 font-medium">Direct Store Contact Lines (Click to Call):</p>
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs">
+              <a href="tel:+917907141419" class="px-3 py-1.5 bg-white border border-pink-200 rounded-lg text-slate-700 hover:text-brand-pink hover:border-brand-pink transition-colors font-medium">
+                📞 79071 41419
+              </a>
+              <a href="tel:+919895338544" class="px-3 py-1.5 bg-white border border-pink-200 rounded-lg text-slate-700 hover:text-brand-pink hover:border-brand-pink transition-colors font-medium">
+                📞 98953 38544
+              </a>
+              <a href="tel:+919961421201" class="px-3 py-1.5 bg-white border border-pink-200 rounded-lg text-slate-700 hover:text-brand-pink hover:border-brand-pink transition-colors font-medium">
+                📞 99614 21201
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -inset-2 bg-gradient-to-tr from-brand-pink via-pink-400 to-amber-200 rounded-3xl opacity-30 blur-lg"></div>
+            
+            <div class="relative bg-white p-3 rounded-2xl shadow-xl border border-pink-100">
+              <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-pink-50">
+                <img 
+                  src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80" 
+                  alt="Colour Plus - The Ocean of Garments S.M. Street Kozhikode"
+                  class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  loading="eager"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+                  <div>
+                    <p class="font-semibold text-sm">Festive & Everyday Wear</p>
+                    <p class="text-pink-200 text-[11px]">Kids & Women's Fashion</p>
+                  </div>
+                  <span class="bg-brand-pink px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider shadow">
+                    S.M. Street
+                  </span>
+                </div>
+              </div>
+
+              <!-- Hero Logo Marker Box -->
+              <div class="mt-3 p-3 bg-pink-50/70 rounded-xl border border-pink-100 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-white text-brand-pink border border-pink-200 font-display flex items-center justify-center text-lg font-bold shadow-sm">
+                    C+
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold text-slate-800">Colour Plus Official Store</p>
+                    <p class="text-[11px] text-slate-500">Mittai Theruvu, Calicut - 673001</p>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded">
+                  Open Daily
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Silky Undulating "Ocean of Garments" Wave SVG -->
+    <div class="absolute bottom-0 left-0 right-0 h-10 overflow-hidden pointer-events-none select-none">
+      <svg class="w-[200%] h-full animate-silk-wave text-white fill-current opacity-95" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,40 C150,90 350,10 500,60 C650,110 900,20 1200,60 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       CREDIBILITY & QUALITY PILLARS
+       ================================================================= -->
+  <section class="bg-white py-8 border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-3 bg-pink-50/60 rounded-xl border border-pink-100">
+          <p class="text-xs font-bold text-slate-900">🛡️ 100% Skin-Friendly</p>
+          <p class="text-[11px] text-slate-500">Gentle dyes for infants</p>
+        </div>
+        <div class="p-3 bg-pink-50/60 rounded-xl border border-pink-100">
+          <p class="text-xs font-bold text-slate-900">🏭 Direct Sourcing</p>
+          <p class="text-[11px] text-slate-500">Fair transparent pricing</p>
+        </div>
+        <div class="p-3 bg-pink-50/60 rounded-xl border border-pink-100">
+          <p class="text-xs font-bold text-slate-900">🔄 Easy Size Exchange</p>
+          <p class="text-[11px] text-slate-500">Shop with confidence</p>
+        </div>
+        <div class="p-3 bg-pink-50/60 rounded-xl border border-pink-100">
+          <p class="text-xs font-bold text-slate-900">📹 Video Call Shopping</p>
+          <p class="text-[11px] text-slate-500">Live tour for GCC NRIs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION 4: COLLECTIONS (3 Big Cards: Boys, Girls, Ladies)
+       ================================================================= -->
+  <section id="collections" class="py-16 sm:py-24 bg-pink-50/40 border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-pink font-semibold text-xs tracking-widest uppercase">Curated Fashion For Everyone</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">
+          Explore Our Garment Collections
+        </h2>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">
+          From gentle baby wear to lively festive gowns, discover why we are called <strong class="text-brand-pink font-semibold">"The Ocean of Garments"</strong>.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- CARD 1: BOYS' CLOTHING -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-pink-100 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
+          <div class="relative aspect-[4/3] bg-pink-100 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=800&q=80" 
+              alt="Boys' clothing age 0 to 12 years Colour Plus Kozhikode"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-pink shadow-sm">
+              Age 0 to 12 Years
+            </div>
+          </div>
+          
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-brand-pink uppercase tracking-wider">Kids Fashion</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1">Boys' Clothing</h3>
+              <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                Comfortable, durable and playful apparel for little champions. Smart casual shirts, breathable cotton t-shirts, festive mini-kurtas, dhotis, denim jeans, and newborn baby sets crafted from skin-friendly fabrics.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mt-4 text-[11px] font-medium text-slate-600">
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Cotton Shirts</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Festive Kurtas</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Party Wear</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Infant Sets</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus,%20I%20am%20looking%20for%20Boys%20clothing%20(0-12%20years)." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-pink-50 hover:bg-brand-pink hover:text-white text-brand-pink text-xs font-semibold rounded-xl text-center transition-all flex items-center justify-center gap-1.5">
+                <span>Enquire Boys' Stock on WhatsApp</span> →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: GIRLS' CLOTHING -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-pink-100 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
+          <div class="relative aspect-[4/3] bg-pink-100 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=800&q=80" 
+              alt="Girls' clothing all ages Colour Plus Kozhikode"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-pink shadow-sm">
+              All Ages (Babies to Teens)
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-brand-pink uppercase tracking-wider">Princess & Party Wear</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1">Girls' Clothing</h3>
+              <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                Vibrant, graceful and cheerful styles for girls of all ages. Explore fairy frocks, twirl-worthy party dresses, traditional lehengas, skirts, tops, and comfortable daily wear in enchanting colours and patterns.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mt-4 text-[11px] font-medium text-slate-600">
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Party Frocks</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Mini Lehengas</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Floral Gowns</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Ethnic Wear</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus,%20I%20am%20looking%20for%20Girls%20clothing%20collections." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-pink-50 hover:bg-brand-pink hover:text-white text-brand-pink text-xs font-semibold rounded-xl text-center transition-all flex items-center justify-center gap-1.5">
+                <span>Enquire Girls' Stock on WhatsApp</span> →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: LADIES' WEAR -->
+        <div class="bg-white rounded-2xl overflow-hidden border border-pink-100 shadow-md hover:shadow-xl transition-all duration-300 group flex flex-col">
+          <div class="relative aspect-[4/3] bg-pink-100 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80" 
+              alt="Ladies wear kurtis gowns dresses Colour Plus Kozhikode"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-pink shadow-sm">
+              Women's Ethnic & Western
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-semibold text-brand-pink uppercase tracking-wider">Women's Collection</span>
+              <h3 class="text-xl font-bold text-slate-900 mt-1">Ladies' Wear</h3>
+              <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                Trendy, modest, and elegant clothing designed for everyday grace and special celebrations. Featuring designer cotton & silk kurtis, anarkalis, festive gowns, western maxi dresses, and coordinates.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mt-4 text-[11px] font-medium text-slate-600">
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Designer Kurtis</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Festive Gowns</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Maxi Dresses</span>
+                <span class="px-2 py-0.5 bg-slate-100 rounded">Dupattas & Pants</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus,%20I%20am%20interested%20in%20your%20Ladies%20wear%20kurtis%20and%20gowns." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-pink-50 hover:bg-brand-pink hover:text-white text-brand-pink text-xs font-semibold rounded-xl text-center transition-all flex items-center justify-center gap-1.5">
+                <span>Enquire Ladies' Stock on WhatsApp</span> →
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================================================================
+       INTERACTIVE OUTFIT FINDER
+       ================================================================= -->
+  <section id="finder" class="py-16 sm:py-20 bg-white border-b border-pink-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="p-8 rounded-3xl bg-pink-50/60 border border-pink-200 text-center">
+        <span class="px-3 py-1 bg-white border border-pink-200 rounded-full text-xs font-bold text-brand-pink">Interactive Finder</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Find Your Ideal Wardrobe Match</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1 mb-6">Choose a department below to begin quick WhatsApp matching:</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus!%20I%20am%20looking%20for%20Boys%20outfits%20(0-12%20years)." target="_blank" class="p-4 bg-white rounded-xl border border-pink-200 hover:border-brand-pink text-center">
+            <span class="text-2xl block mb-1">👦</span>
+            <strong class="text-sm block">Boys (0-12 Years)</strong>
+            <span class="text-xs text-slate-500">View Kurtas & Shirts</span>
+          </a>
+          <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus!%20I%20am%20looking%20for%20Girls%20frocks%20and%20lehengas." target="_blank" class="p-4 bg-white rounded-xl border border-pink-200 hover:border-brand-pink text-center">
+            <span class="text-2xl block mb-1">👧</span>
+            <strong class="text-sm block">Girls (All Ages)</strong>
+            <span class="text-xs text-slate-500">View Frocks & Lehengas</span>
+          </a>
+          <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus!%20I%20am%20looking%20for%20Ladies%20designer%20kurtis%20and%20gowns." target="_blank" class="p-4 bg-white rounded-xl border border-pink-200 hover:border-brand-pink text-center">
+            <span class="text-2xl block mb-1">👗</span>
+            <strong class="text-sm block">Ladies' Wear</strong>
+            <span class="text-xs text-slate-500">View Kurtis & Gowns</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       STRATEGIC B2B & WHOLESALE HUB
+       ================================================================= -->
+  <section id="wholesale" class="py-16 sm:py-24 bg-slate-900 text-white border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-amber-300 text-xs font-semibold">
+            B2B & Bulk Order Supply
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold">Wholesale Orders for Schools, Events & Boutiques</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Supplying bulk festival orders, dance troupe uniforms, and boutique resale lots across Kerala and the GCC with direct factory margins and official GST invoicing.
+          </p>
+          <div class="pt-2">
+            <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus!%20I%20am%20interested%20in%20Bulk%20/%20Wholesale%20orders." target="_blank" class="px-6 py-3.5 bg-brand-pink hover:bg-brand-darkpink text-white font-semibold text-xs sm:text-sm rounded-xl inline-flex items-center gap-2 shadow-md">
+              💬 Inquire on WhatsApp Wholesale Desk
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-slate-800 p-6 rounded-2xl border border-slate-700 text-xs space-y-3">
+          <p class="font-bold text-amber-300 text-sm">Wholesale Guarantees:</p>
+          <p>✓ Minimum order starting at just 15 pieces</p>
+          <p>✓ Transparent wholesale price tiers</p>
+          <p>✓ Courier dispatch to UAE, Saudi & Oman</p>
+          <p>✓ Dedicated direct hotline: +91 79071 41419</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION 3: ABOUT US (Since 1998 Badge)
+       ================================================================= -->
+  <section id="about" class="py-16 sm:py-20 bg-white border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-pink font-semibold text-xs tracking-widest uppercase">Our Heritage & Story</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">
+          Serving Kozhikode with Love & Style
+        </h2>
+        <div class="ornamental-divider my-4">
+          <span class="font-script text-2xl text-brand-pink">Colour Plus Since 1998</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-5 text-slate-600 leading-relaxed text-base sm:text-lg">
+          <p>
+            <strong class="text-slate-900 font-semibold">Colour Plus</strong> is a trusted family clothing destination located on the legendary <strong class="text-slate-900 font-semibold">S.M. Street (Mittai Theruvu)</strong>, Kozhikode, happily dressing generations since <strong class="text-brand-pink font-semibold">1998</strong>.
+          </p>
+          <p>
+            Popularly known among Calicut shoppers as <span class="font-script text-2xl text-brand-pink font-bold">"The Ocean of Garments"</span>, we take pride in presenting an extensive collection of clothing for growing boys, cheerful girls, and modern women looking for elegant everyday kurtis, festive party gowns, and special occasion dresses.
+          </p>
+          <p>
+            For over <strong class="text-slate-900 font-semibold">25+ golden years</strong>, our ethos has remained simple: providing the friendliest shopping experience, genuine fabric quality, and honest, affordable prices in the warmest festive spirit of Kozhikode.
+          </p>
+
+          <div class="grid grid-cols-3 gap-4 pt-4">
+            <div class="p-4 rounded-xl bg-pink-50/70 border border-pink-100 text-center">
+              <span class="block text-2xl sm:text-3xl font-bold text-brand-pink">25+</span>
+              <span class="text-xs font-medium text-slate-600">Years of Service</span>
+            </div>
+            <div class="p-4 rounded-xl bg-pink-50/70 border border-pink-100 text-center">
+              <span class="block text-2xl sm:text-3xl font-bold text-brand-pink">100k+</span>
+              <span class="text-xs font-medium text-slate-600">Happy Families</span>
+            </div>
+            <div class="p-4 rounded-xl bg-pink-50/70 border border-pink-100 text-center">
+              <span class="block text-2xl sm:text-3xl font-bold text-brand-pink">100%</span>
+              <span class="text-xs font-medium text-slate-600">Pure Quality</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm">
+            <div class="p-8 rounded-3xl bg-gradient-to-br from-brand-pink to-pink-700 text-white shadow-xl text-center relative overflow-hidden">
+              <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full"></div>
+              <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-white/10 rounded-full"></div>
+
+              <div class="w-20 h-20 mx-auto rounded-full bg-white text-brand-pink font-display text-3xl font-bold flex items-center justify-center shadow-lg mb-4 ring-4 ring-pink-300/40">
+                C+
+              </div>
+
+              <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-semibold tracking-widest uppercase mb-2">
+                Heritage Boutique
+              </span>
+
+              <h3 class="text-3xl font-bold mb-1">Established 1998</h3>
+              <p class="font-script text-2xl text-pink-100 mb-4">S.M. Street · Mittai Theruvu</p>
+
+              <div class="h-0.5 w-16 bg-pink-200/50 mx-auto my-4"></div>
+
+              <p class="text-xs text-pink-50 leading-relaxed font-light">
+                "Dressing Calicut's precious moments with vibrant colours and timeless comfort for over a quarter of a century."
+              </p>
+
+              <div class="mt-6">
+                <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-brand-pink rounded-xl font-semibold text-xs hover:bg-pink-50 transition-colors shadow-sm">
+                  Visit Us on S.M. Street
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION 6: CUSTOMER REVIEWS (3 Sample Reviews)
+       ================================================================= -->
+  <section id="reviews" class="py-16 sm:py-24 bg-pink-50/30 border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-pink font-semibold text-xs tracking-widest uppercase">Words from our shoppers</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">
+          Loved by Kozhikode Families
+        </h2>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">
+          Read what our cherished customers say about shopping at Colour Plus on S.M. Street.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-7 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-sm mb-3">★★★★★</div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "We have been buying Eid and birthday dresses for my children here for over 10 years. Colour Plus is our first stop on S.M. Street! Excellent quality materials that remain soft even after repeated washes."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-pink-100 text-brand-pink font-bold text-sm flex items-center justify-center">
+              FA
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Fathima Asharaf</p>
+              <p class="text-[11px] text-slate-500">Mankavu, Kozhikode</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-7 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-sm mb-3">★★★★★</div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "Their ladies' kurtis and party gowns collection is truly 'The Ocean of Garments'. Beautiful shades, comfortable cottons, and the staff are always patient and helpful. Reasonable rates too!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-pink-100 text-brand-pink font-bold text-sm flex items-center justify-center">
+              SN
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Sneha Nambiar</p>
+              <p class="text-[11px] text-slate-500">Nadakkavu, Calicut</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-7 rounded-2xl border border-pink-100 shadow-sm hover:shadow-md transition-shadow relative flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-sm mb-3">★★★★★</div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "Found the sweetest festive kurta for my 4-year-old son and lovely dresses for my niece. A truly authentic and trustworthy clothing shop on Mittai Theruvu. Will definitely return!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-pink-100 text-brand-pink font-bold text-sm flex items-center justify-center">
+              MR
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Mohammed Rishal</p>
+              <p class="text-[11px] text-slate-500">Feroke, Kozhikode</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION 8: CONTACT SECTION
+       (Address, 3 Phone Numbers Click-to-Call, Hours, Map, WhatsApp Form)
+       ================================================================= -->
+  <section id="contact" class="py-16 sm:py-24 bg-pink-50/50 border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-brand-pink font-semibold text-xs tracking-widest uppercase">Plan Your Visit or Inquiry</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">
+          Our Kozhikode Stores & Direct Contact
+        </h2>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">
+          Serving you at two premier Calicut locations: our historic S.M. Street flagship and our convenient Pantheeramkavu bypass branch.
+        </p>
+
+        <!-- Branch Switcher Buttons -->
+        <div class="mt-6 inline-flex p-1.5 bg-white border border-pink-200 rounded-2xl shadow-xs gap-2">
+          <button id="btn-branch-sm" onclick="switchStandaloneBranch('sm-street')" class="px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 bg-brand-pink text-white shadow-md cursor-pointer">
+            <span>📍 S.M. Street (Mittai Theruvu)</span>
+            <span class="hidden md:inline text-[10px] px-1.5 py-0.5 rounded-md bg-white/20 text-white">Flagship (1998)</span>
+          </button>
+          <button id="btn-branch-pan" onclick="switchStandaloneBranch('pantheeramkavu')" class="px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 text-slate-600 hover:text-slate-900 hover:bg-pink-50 cursor-pointer">
+            <span>📍 Pantheeramkavu Branch</span>
+            <span class="hidden md:inline text-[10px] px-1.5 py-0.5 rounded-md bg-pink-100 text-brand-pink">Easy Parking</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="bg-white p-6 rounded-2xl border border-pink-100 shadow-sm space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center shrink-0 text-xl">
+                📍
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between gap-2">
+                  <h3 id="standalone-branch-title" class="text-sm font-bold text-slate-900 uppercase tracking-wide">Colour Plus — S.M. Street Flagship</h3>
+                  <span id="standalone-branch-badge" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-pink-100 text-brand-pink">Since 1998</span>
+                </div>
+                <div id="standalone-branch-address" class="text-slate-700 text-sm mt-1.5 leading-relaxed">
+                  <p class="font-semibold text-slate-900">Colour Plus</p>
+                  <p>S.M. Street (Mittai Theruvu),</p>
+                  <p>Kozhikode (Calicut) - 673001,</p>
+                  <p>Kerala, India.</p>
+                </div>
+                <p id="standalone-branch-landmark" class="text-xs text-slate-500 mt-2">
+                  <strong>Landmark:</strong> Central Mittai Theruvu Heritage Walkway
+                </p>
+                <a id="standalone-maps-link" href="https://maps.google.com/?q=S.M.+Street+Kozhikode+Calicut" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-brand-pink hover:underline mt-2.5">
+                  Open in Google Maps App ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-pink-50 text-brand-pink flex items-center justify-center shrink-0 text-xl">
+                ⏰
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide">Opening Hours</h3>
+                  <span id="contact-open-badge" class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800">
+                    Open Now
+                  </span>
+                </div>
+                <p class="text-slate-700 text-sm mt-1">
+                  Monday to Sunday: <span class="font-semibold text-slate-900">10:00 AM – 9:00 PM</span>
+                </p>
+                <p class="text-xs text-slate-500 mt-0.5">Open on all public holidays and festive seasons.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- THREE CLICK-TO-CALL PHONES -->
+          <div class="bg-white p-6 rounded-2xl border border-pink-100 shadow-sm">
+            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wide mb-1">
+              Store Phone Lines (Tap to Call)
+            </h3>
+            <p class="text-xs text-slate-500 mb-4">Feel free to call any of our direct numbers for product enquiries or directions.</p>
+
+            <div class="space-y-3">
+              <a href="tel:+917907141419" class="p-3 rounded-xl bg-pink-50/60 hover:bg-pink-100 border border-pink-200 transition-colors flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg bg-brand-pink text-white flex items-center justify-center text-sm font-bold">1</span>
+                  <div>
+                    <span class="text-xs text-slate-500 block">Primary / WhatsApp</span>
+                    <span class="text-sm font-bold text-slate-900 group-hover:text-brand-pink">+91 79071 41419</span>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-brand-pink bg-white px-2.5 py-1 rounded-md shadow-xs">Call</span>
+              </a>
+
+              <a href="tel:+919895338544" class="p-3 rounded-xl bg-pink-50/60 hover:bg-pink-100 border border-pink-200 transition-colors flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg bg-brand-pink text-white flex items-center justify-center text-sm font-bold">2</span>
+                  <div>
+                    <span class="text-xs text-slate-500 block">Store Line 2</span>
+                    <span class="text-sm font-bold text-slate-900 group-hover:text-brand-pink">+91 98953 38544</span>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-brand-pink bg-white px-2.5 py-1 rounded-md shadow-xs">Call</span>
+              </a>
+
+              <a href="tel:+919961421201" class="p-3 rounded-xl bg-pink-50/60 hover:bg-pink-100 border border-pink-200 transition-colors flex items-center justify-between group">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg bg-brand-pink text-white flex items-center justify-center text-sm font-bold">3</span>
+                  <div>
+                    <span class="text-xs text-slate-500 block">Store Line 3</span>
+                    <span class="text-sm font-bold text-slate-900 group-hover:text-brand-pink">+91 99614 21201</span>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-brand-pink bg-white px-2.5 py-1 rounded-md shadow-xs">Call</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Parking & Visiting Assistant -->
+          <div id="standalone-parking-card" class="p-4 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-700 space-y-2">
+            <p id="standalone-parking-title" class="font-bold text-slate-900 flex items-center gap-1.5">
+              🚗 Visiting & Parking: S.M. Street Flagship
+            </p>
+            <p id="standalone-parking-text" class="leading-relaxed">
+              S.M. Street is a heritage pedestrian walkway. For four-wheelers, convenient parking is available at <strong class="text-slate-900">Maniyan Kulam Multi-Level Car Parking</strong> or near the Railway Station (only 350 meters walk to our shop).
+            </p>
+          </div>
+
+        </div>
+
+        <div class="lg:col-span-7 space-y-6">
+          
+          <div class="bg-white p-6 sm:p-8 rounded-2xl border border-pink-100 shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-slate-900">Send an Enquiry to WhatsApp</h3>
+              <span class="text-xs font-medium text-brand-pink">Instant Reply</span>
+            </div>
+            <p class="text-xs text-slate-500 mb-6">
+              Fill in your details below and click Send to open WhatsApp with your pre-formatted message.
+            </p>
+
+            <form id="whatsapp-contact-form" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="form-name" class="block text-xs font-medium text-slate-700 mb-1">Your Name *</label>
+                  <input type="text" id="form-name" required placeholder="e.g. Rahul / Aisha" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 focus:outline-none focus:border-brand-pink focus:ring-1 focus:ring-brand-pink">
+                </div>
+                <div>
+                  <label for="form-phone" class="block text-xs font-medium text-slate-700 mb-1">Your Mobile Number *</label>
+                  <input type="tel" id="form-phone" required placeholder="e.g. 9876543210" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 focus:outline-none focus:border-brand-pink focus:ring-1 focus:ring-brand-pink">
+                </div>
+              </div>
+
+              <div>
+                <label for="form-branch" class="block text-xs font-medium text-slate-700 mb-1">Select Store Branch</label>
+                <select id="form-branch" onchange="onStandaloneBranchSelectChange(this.value)" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 focus:outline-none focus:border-brand-pink focus:ring-1 focus:ring-brand-pink bg-white">
+                  <option value="S.M. Street (Mittai Theruvu) Flagship">Colour Plus — S.M. Street Flagship (Mittai Theruvu)</option>
+                  <option value="Pantheeramkavu Branch">Colour Plus — Pantheeramkavu Branch (Direct Parking)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="form-category" class="block text-xs font-medium text-slate-700 mb-1">Interested In</label>
+                <select id="form-category" class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 focus:outline-none focus:border-brand-pink focus:ring-1 focus:ring-brand-pink bg-white">
+                  <option value="Boys Clothing (0-12 yrs)">Boys' Clothing (Age 0-12)</option>
+                  <option value="Girls Clothing (All ages)">Girls' Clothing (All ages)</option>
+                  <option value="Ladies Kurtis & Gowns">Ladies' Wear (Kurtis, Gowns, Dresses)</option>
+                  <option value="Festive / Wedding Collection">Festive & Special Occasion Wear</option>
+                  <option value="Wholesale & Bulk Orders">Wholesale & Bulk Orders</option>
+                  <option value="General Store Enquiry">General Store Enquiry / Directions</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="form-message" class="block text-xs font-medium text-slate-700 mb-1">Your Message or Query</label>
+                <textarea id="form-message" rows="3" placeholder="Tell us what size, color or dress style you are looking for..." class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 focus:outline-none focus:border-brand-pink focus:ring-1 focus:ring-brand-pink"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 px-6 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm rounded-xl shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Send via WhatsApp to Colour Plus
+              </button>
+            </form>
+          </div>
+
+          <!-- EMBEDDED GOOGLE MAP -->
+          <div class="bg-white p-3 rounded-2xl border border-pink-100 shadow-sm overflow-hidden">
+            <div class="flex items-center justify-between px-3 py-2">
+              <span id="standalone-map-label" class="text-xs font-bold text-slate-800">Map: Colour Plus — S.M. Street Flagship</span>
+              <span class="text-[11px] text-slate-500">PIN: 673001</span>
+            </div>
+            <div class="w-full h-64 rounded-xl overflow-hidden bg-slate-100 relative">
+              <iframe 
+                id="standalone-map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0617327318725!2d75.77663431526487!3d11.249539292001402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6593a20e29b19%3A0xe5a3c0353c7cba2a!2sS.M.%20Street%2C%20Palayam%2C%20Kozhikode%2C%20Kerala%20673001!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Google Map of Colour Plus Kozhikode"
+                class="w-full h-full">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION 9: FOOTER
+       ================================================================= -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-brand-pink text-white font-display text-lg flex items-center justify-center font-bold">
+              C+
+            </div>
+            <div>
+              <span class="font-display text-2xl text-white">Colour Plus</span>
+              <p class="text-[11px] text-pink-400 uppercase tracking-widest font-medium">The Ocean of Garments</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Trusted family clothing destination on famous S.M. Street (Mittai Theruvu), Kozhikode since 1998. Curating quality garments for boys, girls, and women for over 25 years.
+          </p>
+          <div class="pt-2">
+            <span class="inline-block px-3 py-1 bg-slate-800 border border-slate-700 text-pink-300 rounded-full text-xs font-medium">
+              Established 1998 · Kozhikode
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-brand-pink transition-colors">Home</a></li>
+            <li><a href="#collections" class="hover:text-brand-pink transition-colors">Garment Collections</a></li>
+            <li><a href="#finder" class="hover:text-brand-pink transition-colors">Smart Outfit Finder</a></li>
+            <li><a href="#wholesale" class="hover:text-brand-pink transition-colors">Wholesale & B2B Supply</a></li>
+            <li><a href="#about" class="hover:text-brand-pink transition-colors">About Our 25+ Years Story</a></li>
+            <li><a href="#reviews" class="hover:text-brand-pink transition-colors">Customer Reviews</a></li>
+            <li><a href="#contact" class="hover:text-brand-pink transition-colors">Contact & Map</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Our Store Locations</h4>
+          <ul class="space-y-3 text-xs text-slate-400">
+            <li class="border-b border-slate-800/80 pb-2">
+              <strong class="text-white flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span>
+                Flagship Store (Since 1998):
+              </strong>
+              S.M. Street (Mittai Theruvu),<br>
+              Kozhikode - 673001, Kerala
+            </li>
+            <li class="border-b border-slate-800/80 pb-2">
+              <strong class="text-white flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-pink"></span>
+                Pantheeramkavu Branch:
+              </strong>
+              Pantheeramkavu, Bypass Access,<br>
+              Kozhikode - 673001, Kerala
+            </li>
+            <li>
+              <strong class="text-white block">Call Lines (Both Stores):</strong>
+              <div class="flex flex-col gap-0.5 mt-0.5">
+                <a href="tel:+917907141419" class="hover:text-pink-300">📞 79071 41419 (Helpline / WhatsApp)</a>
+                <a href="tel:+919895338544" class="hover:text-pink-300">📞 98953 38544</a>
+                <a href="tel:+919961421201" class="hover:text-pink-300">📞 99614 21201</a>
+              </div>
+            </li>
+            <li class="pt-0.5">
+              <strong class="text-white block">Opening Hours:</strong>
+              10:00 AM – 9:00 PM (Daily at both locations)
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Customer Services</h4>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+            Follow our social media channels for new festive arrivals, festival discounts, and collection previews.
+          </p>
+
+          <div class="flex items-center gap-2">
+            <button onclick="openModal('video-modal')" class="px-3 py-1.5 bg-emerald-800 text-emerald-200 rounded-lg text-xs font-semibold">
+              📹 Book Video Tour
+            </button>
+            <button onclick="openModal('size-modal')" class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded-lg text-xs font-semibold">
+              📏 Sizing Chart
+            </button>
+          </div>
+
+          <div class="mt-5">
+            <a href="https://wa.me/917907141419?text=Hello%20Colour%20Plus!" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:underline">
+              <span>Chat directly on WhatsApp</span> →
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© 1998 – <span id="current-year"></span> Colour Plus. All rights reserved. The Ocean of Garments.</p>
+        <p>S.M. Street (Mittai Theruvu) & Pantheeramkavu, Kozhikode, Kerala - 673001</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       FLOATING WHATSAPP CHAT BUTTON (Bottom Right)
+       ================================================================= -->
+  <aside aria-label="Quick WhatsApp Contact" class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <a 
+      href="https://wa.me/917907141419?text=Hello%20Colour%20Plus,%20I%20am%20chatting%20from%20your%20website%20and%20have%20an%20enquiry." 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 bg-white text-slate-800 text-xs font-semibold rounded-full shadow-lg border border-pink-100 hover:shadow-xl transition-all hover:text-brand-pink"
+    >
+      <span>Need help? Chat with us</span>
+    </a>
+
+    <a 
+      href="https://wa.me/917907141419?text=Hello%20Colour%20Plus,%20I%20am%20chatting%20from%20your%20website%20and%20have%20an%20enquiry." 
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Chat with Colour Plus on WhatsApp"
+      class="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-xl shadow-emerald-600/30 transition-transform hover:scale-110 active:scale-95 focus:outline-none ring-4 ring-white"
+    >
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- =================================================================
+       MODAL: VIDEO SHOPPING TOUR
+       ================================================================= -->
+  <div id="video-modal" class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between pb-3 border-b">
+        <h3 class="text-base font-bold text-slate-900">📹 Live WhatsApp Video Shopping</h3>
+        <button onclick="closeModal('video-modal')" class="text-slate-400 hover:text-slate-700 text-lg font-bold">✕</button>
+      </div>
+      <p class="text-xs text-slate-600">
+        Ideal for Gulf NRIs & outstation families. We will walk with you through our S.M. Street shop racks via WhatsApp video call.
+      </p>
+      <form onsubmit="handleVideoTour(event)" class="space-y-3">
+        <input type="text" id="vm-name" required placeholder="Your Name" class="w-full px-3 py-2 text-xs rounded-xl border">
+        <input type="tel" id="vm-phone" required placeholder="WhatsApp Number with Country Code (e.g. +971...)" class="w-full px-3 py-2 text-xs rounded-xl border">
+        <input type="text" id="vm-interest" placeholder="Collection Interested in (e.g. Kids Festive, Ladies Kurtis)" class="w-full px-3 py-2 text-xs rounded-xl border">
+        <button type="submit" class="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs rounded-xl">
+          Schedule Video Call on WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       MODAL: SIZE GUIDE
+       ================================================================= -->
+  <div id="size-modal" class="fixed inset-0 z-50 bg-black/80 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl space-y-4 text-xs">
+      <div class="flex items-center justify-between pb-3 border-b">
+        <h3 class="text-base font-bold text-slate-900">📏 Size & Fit Reference Guide</h3>
+        <button onclick="closeModal('size-modal')" class="text-slate-400 hover:text-slate-700 text-lg font-bold">✕</button>
+      </div>
+      <div class="p-3 bg-pink-50 rounded-xl">
+        <p class="font-bold text-slate-900 mb-1">Boys' Clothing (Age 0 to 12 Years)</p>
+        <p>0-1Y (18-20"), 2-4Y (22-24"), 5-7Y (26-28"), 8-10Y (30"), 11-12Y (32-34")</p>
+      </div>
+      <div class="p-3 bg-pink-50 rounded-xl">
+        <p class="font-bold text-slate-900 mb-1">Ladies' Wear (Kurtis & Gowns)</p>
+        <p>S (36"), M (38"), L (40"), XL (42"), XXL (44"), 3XL (46")</p>
+      </div>
+      <div class="pt-2 text-right">
+        <button onclick="closeModal('size-modal')" class="px-4 py-2 bg-slate-900 text-white rounded-lg">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       JAVASCRIPT LOGIC
+       ================================================================= -->
+  <script>
+    function checkStoreHours() {
+      const now = new Date();
+      const utcTime = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const istOffsetHours = 5.5;
+      const istDate = new Date(utcTime + (3600000 * istOffsetHours));
+
+      const hour = istDate.getHours();
+      const minute = istDate.getMinutes();
+      const currentTimeInMinutes = hour * 60 + minute;
+
+      const openTime = 10 * 60;
+      const closeTime = 21 * 60;
+
+      const isOpen = (currentTimeInMinutes >= openTime && currentTimeInMinutes < closeTime);
+
+      const statusText = document.getElementById('status-text');
+      const statusDot = document.getElementById('status-dot');
+      const contactBadge = document.getElementById('contact-open-badge');
+
+      if (isOpen) {
+        if (statusText) statusText.textContent = "Open Now (Until 9:00 PM)";
+        if (statusDot) statusDot.className = "w-2 h-2 rounded-full bg-emerald-400";
+        if (contactBadge) {
+          contactBadge.textContent = "Open Now · Closes at 9:00 PM";
+          contactBadge.className = "px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800";
+        }
+      } else {
+        if (statusText) statusText.textContent = "Closed Now (Opens 10:00 AM)";
+        if (statusDot) statusDot.className = "w-2 h-2 rounded-full bg-amber-400";
+        if (contactBadge) {
+          contactBadge.textContent = "Closed Now · Opens tomorrow at 10:00 AM";
+          contactBadge.className = "px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-800";
+        }
+      }
+    }
+
+    checkStoreHours();
+    setInterval(checkStoreHours, 60000);
+
+    const yearEl = document.getElementById('current-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isClosed = mobileMenu.classList.contains('hidden');
+        if (isClosed) {
+          mobileMenu.classList.remove('hidden');
+          hamburgerIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+        } else {
+          mobileMenu.classList.add('hidden');
+          hamburgerIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        }
+      });
+    }
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenu) {
+          mobileMenu.classList.add('hidden');
+          hamburgerIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        }
+      });
+    });
+
+    // Modals
+    function openModal(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.remove('hidden');
+        el.classList.add('flex');
+      }
+    }
+
+    function closeModal(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.add('hidden');
+        el.classList.remove('flex');
+      }
+    }
+
+    // Video Tour submission
+    function handleVideoTour(e) {
+      e.preventDefault();
+      const name = document.getElementById('vm-name').value;
+      const phone = document.getElementById('vm-phone').value;
+      const interest = document.getElementById('vm-interest').value;
+
+      let msg = `*Live WhatsApp Video Shopping Request - Colour Plus*\n\n`;
+      msg += `👤 Name: ${name}\n`;
+      msg += `📱 Phone: ${phone}\n`;
+      msg += `👗 Interested Garments: ${interest || 'Festival collections'}\n\n`;
+      msg += `_Please arrange a live rack tour on WhatsApp video call._`;
+
+      window.open(`https://wa.me/917907141419?text=${encodeURIComponent(msg)}`, '_blank');
+      closeModal('video-modal');
+    }
+
+    // Branch Data & Switching for Standalone HTML
+    const BRANCH_DATA = {
+      'sm-street': {
+        title: 'Colour Plus — S.M. Street Flagship',
+        badge: 'Since 1998',
+        addressHtml: '<p class="font-semibold text-slate-900">Colour Plus</p><p>S.M. Street (Mittai Theruvu),</p><p>Kozhikode (Calicut) - 673001,</p><p>Kerala, India.</p>',
+        landmark: 'Central Mittai Theruvu Heritage Walkway',
+        mapsQuery: 'S.M.+Street+Kozhikode+Calicut',
+        mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0617327318725!2d75.77663431526487!3d11.249539292001402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6593a20e29b19%3A0xe5a3c0353c7cba2a!2sS.M.%20Street%2C%20Palayam%2C%20Kozhikode%2C%20Kerala%20673001!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin',
+        parkingTitle: '🚗 Visiting & Parking: S.M. Street Flagship',
+        parkingText: 'S.M. Street is a heritage pedestrian walkway. For four-wheelers, convenient parking is available at <strong class="text-slate-900">Maniyan Kulam Multi-Level Car Parking</strong> or near the Railway Station (only 350 meters walk to our shop).'
+      },
+      'pantheeramkavu': {
+        title: 'Colour Plus — Pantheeramkavu Branch',
+        badge: 'Direct Parking',
+        addressHtml: '<p class="font-semibold text-slate-900">Colour Plus</p><p>Pantheeramkavu,</p><p>Kozhikode (Calicut) - 673001,</p><p>Kerala, India.</p>',
+        landmark: 'Pantheeramkavu Junction / Calicut Bypass Access',
+        mapsQuery: 'Pantheeramkavu+Kozhikode+Kerala',
+        mapsEmbed: 'https://maps.google.com/maps?q=Pantheeramkavu+Kozhikode+Kerala&t=&z=15&ie=UTF8&iwloc=&output=embed',
+        parkingTitle: '🚗 Visiting & Parking: Pantheeramkavu Branch',
+        parkingText: 'Direct highway road access with dedicated customer vehicle parking available right in front of the store. Hassle-free for family shopping with private car or two-wheeler.'
+      }
+    };
+
+    function switchStandaloneBranch(branchId) {
+      const b = BRANCH_DATA[branchId];
+      if (!b) return;
+
+      const titleEl = document.getElementById('standalone-branch-title');
+      const badgeEl = document.getElementById('standalone-branch-badge');
+      const addrEl = document.getElementById('standalone-branch-address');
+      const landEl = document.getElementById('standalone-branch-landmark');
+      const mapsLink = document.getElementById('standalone-maps-link');
+      const mapLabel = document.getElementById('standalone-map-label');
+      const mapIframe = document.getElementById('standalone-map-iframe');
+      const parkTitle = document.getElementById('standalone-parking-title');
+      const parkText = document.getElementById('standalone-parking-text');
+      const selectEl = document.getElementById('form-branch');
+      const btnSm = document.getElementById('btn-branch-sm');
+      const btnPan = document.getElementById('btn-branch-pan');
+
+      if (titleEl) titleEl.textContent = b.title;
+      if (badgeEl) badgeEl.textContent = b.badge;
+      if (addrEl) addrEl.innerHTML = b.addressHtml;
+      if (landEl) landEl.innerHTML = '<strong>Landmark:</strong> ' + b.landmark;
+      if (mapsLink) mapsLink.href = 'https://maps.google.com/?q=' + b.mapsQuery;
+      if (mapLabel) mapLabel.textContent = 'Map: ' + b.title;
+      if (mapIframe) mapIframe.src = b.mapsEmbed;
+      if (parkTitle) parkTitle.textContent = b.parkingTitle;
+      if (parkText) parkText.innerHTML = b.parkingText;
+
+      if (selectEl) {
+        selectEl.value = branchId === 'pantheeramkavu' ? 'Pantheeramkavu Branch' : 'S.M. Street (Mittai Theruvu) Flagship';
+      }
+
+      if (branchId === 'sm-street') {
+        btnSm?.classList.add('bg-brand-pink', 'text-white', 'shadow-md');
+        btnSm?.classList.remove('text-slate-600', 'hover:bg-pink-50');
+        btnPan?.classList.remove('bg-brand-pink', 'text-white', 'shadow-md');
+        btnPan?.classList.add('text-slate-600', 'hover:bg-pink-50');
+      } else {
+        btnPan?.classList.add('bg-brand-pink', 'text-white', 'shadow-md');
+        btnPan?.classList.remove('text-slate-600', 'hover:bg-pink-50');
+        btnSm?.classList.remove('bg-brand-pink', 'text-white', 'shadow-md');
+        btnSm?.classList.add('text-slate-600', 'hover:bg-pink-50');
+      }
+    }
+
+    function onStandaloneBranchSelectChange(val) {
+      if (val && val.includes('Pantheeramkavu')) {
+        switchStandaloneBranch('pantheeramkavu');
+      } else {
+        switchStandaloneBranch('sm-street');
+      }
+    }
+
+    // Contact Form to WhatsApp
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+      const name = document.getElementById('form-name').value.trim();
+      const phone = document.getElementById('form-phone').value.trim();
+      const branch = document.getElementById('form-branch') ? document.getElementById('form-branch').value : 'S.M. Street (Mittai Theruvu) Flagship';
+      const category = document.getElementById('form-category').value;
+      const message = document.getElementById('form-message').value.trim();
+
+      let text = `*New Website Enquiry - Colour Plus Kozhikode*\n\n`;
+      text += `👤 *Customer Name:* ${name}\n`;
+      text += `📱 *Customer Phone:* ${phone}\n`;
+      text += `📍 *Store Branch:* ${branch}\n`;
+      text += `🛍️ *Interested In:* ${category}\n`;
+      if (message) text += `💬 *Message:* ${message}\n`;
+      text += `\n_Sent via Colour Plus Website (S.M. Street & Pantheeramkavu)_`;
+
+      window.open(`https://wa.me/917907141419?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    // Interactive Celebration Mode
+    function playFestiveChime() {
+      try {
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const notes = [523.25, 659.25, 783.99, 1046.50];
+        notes.forEach((freq, idx) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          const start = audioCtx.currentTime + idx * 0.07;
+          osc.frequency.setValueAtTime(freq, start);
+          gain.gain.setValueAtTime(0.04, start);
+          gain.gain.exponentialRampToValueAtTime(0.001, start + 0.35);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(start);
+          osc.stop(start + 0.35);
+        });
+      } catch (e) {}
+    }
+
+    function setCelebrationMode(mode) {
+      playFestiveChime();
+      document.querySelectorAll('.mode-btn').forEach(b => {
+        b.className = 'mode-btn px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all bg-white hover:bg-pink-50 text-slate-700 border border-pink-200 cursor-pointer';
+      });
+      const activeBtn = document.getElementById('btn-mode-' + mode);
+      if (activeBtn) {
+        activeBtn.className = 'mode-btn px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all bg-brand-pink text-white shadow-sm ring-2 ring-pink-200 cursor-pointer';
+      }
+    }
+
+    // Live Social Proof Toast Cycling
+    const toastActivities = [
+      { text: "Just now: Customer from Nadakkavu reserved Girls' Kasavu Frock on WhatsApp", icon: "🌸" },
+      { text: "4m ago: WhatsApp enquiry for Boys' Cotton Shirts & Kurtas from Calicut Beach", icon: "👦" },
+      { text: "11m ago: Video Shopping tour scheduled with NRI family in Dubai (UAE)", icon: "📹" },
+      { text: "19m ago: Walk-in customer bought 3 Designer Lucknowi Kurtis at S.M. Street", icon: "👗" },
+      { text: "28m ago: School dance group ordered 25 matching festive ensembles", icon: "✨" }
+    ];
+    let toastIndex = 0;
+    setInterval(() => {
+      toastIndex = (toastIndex + 1) % toastActivities.length;
+      const item = toastActivities[toastIndex];
+      const iconEl = document.getElementById('toast-icon');
+      const textEl = document.getElementById('toast-text');
+      if (iconEl) iconEl.textContent = item.icon;
+      if (textEl) textEl.textContent = item.text;
+    }, 6000);
+  </script>
+
+</body>
+</html>

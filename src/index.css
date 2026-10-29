@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-pink: #E8268F;
+    --brand-pink-hover: #D0187B;
+    --brand-pink-light: #FFF0F7;
+    --brand-pink-subtle: #FDF2F8;
+    --brand-gold: #D4AF37;
+  }
+
+  body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Subtle decorative ornamental borders inspired by traditional Indian boutiques */
+.ornamental-border {
+  background-image: radial-gradient(#E8268F 0.75px, transparent 0.75px), radial-gradient(#E8268F 0.75px, #fff 0.75px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+.ornamental-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.ornamental-divider::before,
+.ornamental-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #FBCFE8;
+}
+.ornamental-divider:not(:empty)::before {
+  margin-right: 1rem;
+}
+.ornamental-divider:not(:empty)::after {
+  margin-left: 1rem;
+}
+
+/* Ocean wave gentle ripple */
+
+/* Ocean wave gentle ripple */
+@keyframes waveMotion {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-wave {
+  animation: waveMotion 6s ease-in-out infinite;
+}
+
+/* Pulsing concentric rings for WhatsApp and call badges */
+@keyframes pulseRing {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 0.3; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+.animate-pulse-ring {
+  animation: pulseRing 2.4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+/* Gold shimmer shine overlay */
+@keyframes goldShine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transform: rotate(30deg);
+  animation: goldShine 4s infinite;
+  pointer-events: none;
+}
+
+/* Kerala Kasavu gold border shimmering ribbon */
+
+/* Kerala Kasavu gold border shimmering ribbon */
+@keyframes kasavuGlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.kasavu-gold-ribbon {
+  background: linear-gradient(90deg, #D4AF37, #FDE047, #E8268F, #FDE047, #D4AF37);
+  background-size: 300% 300%;
+  animation: kasavuGlow 6s ease infinite;
+}
+
+/* Silky undulating ocean wave ribbon */
+@keyframes silkWave {
+  0% { transform: translateX(0) scaleY(1); }
+  50% { transform: translateX(-25%) scaleY(1.08); }
+  100% { transform: translateX(-50%) scaleY(1); }
+}
+
+.animate-silk-wave {
+  animation: silkWave 14s ease-in-out infinite alternate;
+}
+
+
